@@ -1,0 +1,152 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: black;
+}
+
+#loader {
+  display: none;
+}
+
+.webcam {
+  position: relative;
+  margin-top: 5%;
+  margin-left: 20%;
+  z-index: 300;
+  width: 100%;
+  height: auto;
+}
+
+.webcams {
+  align-items: center;
+  /* align-content: center; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: calc(100vw - 40px);
+  height: 100vh;
+}
+
+.feed {
+  /* position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 10px;
+  overflow: hidden; */
+}
+
+.feed iframe,
+.feed object,
+.feed embed {
+    /* border: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+}
+
+/* YOUTUBE  */
+
+/* #youtube {                   
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.video-responsive iframe{
+  left:0;
+  top:0;
+  height:60%;
+  width:60%;
+  position:absolute;
+  z-index: 300;
+}*/
+
+/* YOUTUBE  */
+
+.tv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 301;
+  width: 100%;
+  height: 100%;
+} 
+
+#imagetv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 90%;
+  /* position: fixed; */      /* youtube */
+  /* top: 0; */               /* youtube */
+  /* left: 0; */              /* youtube */
+  /* width: auto; */          /* youtube */    
+  /* height: 100%; */         /* youtube */
+  z-index: 302;
+}
+
+#image0 {
+  position: fixed;
+  top: 8%;
+  left: 18%;
+  width: 65%;
+  height: auto;
+}
+
+/*--------------------------------------------------------------
+## Mobile
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Mobile
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Mobile
+--------------------------------------------------------------*/
+
+/* Portrait */
+@media only screen 
+  and (max-width: 375px) { 
+
+    #loader {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+
+      font-family: Arial, Helvetica, sans-serif;
+    
+      background-color: black;
+      color: white;
+      text-align: center;
+    
+      z-index: 5000;
+    }
+
+    .loader-text {
+      padding: 50% 10% 1% 10%;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 376px) { 
+
+    #loader {
+      display: none;
+    }
+
+}
