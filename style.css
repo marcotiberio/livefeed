@@ -32,11 +32,16 @@ body {
 }
 
 .feed {
-  margin: 20px;
+  margin: 20px 0 0 0;
   /* position: relative;
   padding-bottom: 56.25%;
   padding-top: 10px;
   overflow: hidden; */
+}
+
+.feed .caption {
+  background-color: #000;
+  color: #fff;
 }
 
 .feed iframe,
