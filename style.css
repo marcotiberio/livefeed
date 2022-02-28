@@ -32,6 +32,10 @@ body {
   min-height: 100vh;
 }
 
+.nocam {
+  color: #fff;
+}
+
 .feed {
   margin: 20px 0 0 0;
   /* position: relative;
